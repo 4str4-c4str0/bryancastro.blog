@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astra Portafolio</title>
+  <meta name="description" content="Personal website by Bryan Castro">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+  <link rel="stylesheet" href="/assets/css/main.min.css">
+  <link rel="stylesheet" href="/assets/css/vendors.min.css">
+
+  <script src="/assets/js/vendors.min.js"></script>
+
+  <script src="/assets/js/app.min.js"></script>
+
+  <style>
+.landing-title img {
+  margin: 0;
+  padding: 0;
+}
+
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .landing-title nav {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .landing-title nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      transition: color 0.3s;
+    }
+    .landing-title nav a:hover {
+      color: #00ffff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="./video.mp4" type="video/mp4">
+  </video>
+
+  <div id="preloader">
+    <div class="load">
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+    </div>
+  </div>
+
+  <div id="landing">
+    <div class="landing-title">
+      <nav>
+
+	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">About me</p></a>
+	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Blog</p></a>
+	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Skills</p></a>
+	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Projects</p></a>
+	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Download Resume</p></a>
+	<a href="javascript:close_window();"><p onclick="document.getElementById('select').play();">Quit</p></a>
+      </nav>
+  
+  <h1>Hi, I&#39;m <span class="highlight-title">Bryan Castro (Aka. ASTRA)</span>,</h1>
+  <h1>
+    <span id="txt-rotate" data-period="2000"
+      data-rotate='["Offensive Security And Penetration Testing","Bug Bounty, Defensive Security And Ethical Hacking"]'>
+    </span>
+  </h1>
+
+  <div class="landing-icons">
+    <a class="social-link email" aria-label="My E-Mail" href="mailto:ritchied702@gmail.com">
+      <svg viewBox="0 0 200 200" class="circle">
+        <circle cx="100" cy="100" r="80" />
+      </svg>
+      <div class="social">
+        <svg class="social-svg" viewBox="0 0 48 48">
+          <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/solid.svg#envelope"></use>
+        </svg>
+      </div>
+      <span class="label">E-Mail</span>
+    </a>
+
+    <a class="social-link" aria-label="My GitHub" target="_blank" rel="noreferrer" href="https://github.com/4str4-c4str0">
+      <svg viewBox="0 0 200 200" class="circle">
+        <circle cx="100" cy="100" r="80" />
+      </svg>
+      <div class="social">
+        <svg class="social-svg" viewBox="0 0 48 48">
+          <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/brands.svg#github"></use>
+        </svg>
+      </div>
+      <span class="label">GitHub</span>
+    </a>
+
+    <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank" rel="noreferrer"
+      href="https://www.linkedin.com/in/bryan-castro-aka-astra-56502329a">
+      <svg viewBox="0 0 200 200" class="circle">
+        <circle cx="100" cy="100" r="80" />
+      </svg>
+      <div class="social">
+        <svg class="social-svg" viewBox="0 0 48 48">
+          <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/brands.svg#linkedin-in"></use>
+        </svg>
+      </div>
+      <span class="label">LinkedIn</span>
+    </a>
+  <a class="social-link twitter" aria-label="My Twitter" target="_blank" rel="noreferrer"
+    href="https://twitter.com/astra9155">
+      <svg viewBox="0 0 200 200" class="circle">
+        <circle cx="100" cy="100" r="80" />
+      </svg>    
+    <div class="social">
+      <svg class="social-svg" viewBox="0 0 48 48">
+        <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/brands.svg#twitter"><>
+      </svg>
+    </div>
+  </a>
+  </div>
+</div>
+
+  </div>
+<audio id="select" src="assets/launch_select2.wav" preload="auto"></audio>
+
+<script>
+function close_window() {
+  if (confirm("Are you sure?")) {
+    close();
+  }
+}
+</script>
+
+</body>
+</html>
