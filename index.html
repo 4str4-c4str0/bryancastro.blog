@@ -75,12 +75,11 @@
     <div class="landing-title">
       <nav>
 
-	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">About me</p></a>
-	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Blog</p></a>
-	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Skills</p></a>
-	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Projects</p></a>
+	<a href="/blog/about/" target="_parent"><p onclick="document.getElementById('select').play();">About me</p></a>
+	<a href="/blog/" target="_parent"><p onclick="document.getElementById('select').play();">Blog</p></a>
+	<a href="/blog/skills/" target="_parent"><p onclick="document.getElementById('select').play();">Skills</p></a>
+	<a href="/blog/" target="_parent"><p onclick="document.getElementById('select').play();">Projects</p></a>
 	<a href="#" target="_parent"><p onclick="document.getElementById('select').play();">Download Resume</p></a>
-	<a href="javascript:close_window();"><p onclick="document.getElementById('select').play();">Quit</p></a>
       </nav>
   
   <h1>Hi, I&#39;m <span class="highlight-title">Bryan Castro (Aka. ASTRA)</span>,</h1>
@@ -143,14 +142,6 @@
 
   </div>
 <audio id="select" src="assets/launch_select2.wav" preload="auto"></audio>
-
-<script>
-function close_window() {
-  if (confirm("Are you sure?")) {
-    close();
-  }
-}
-</script>
 
 </body>
 </html>
